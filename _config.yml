@@ -1,0 +1,42 @@
+title:        计算机技术
+description:  xyMeng
+
+theme: null
+
+url: "https://xu.yumeng.tech"
+baseurl: "/computer-technology"
+
+# debug:
+#   compress: true
+#   dist: false
+#   shortcodes: true
+gittalk:
+  enable:       true
+  clientID:     5c4a4805389461265123
+  clientSecret: b13a143f197a4e12a8295c256b366d884ec661d8
+  repo:         computer-technology
+  owner:        Meng2025
+  admin:        Meng2025
+  id:           comments
+
+readme_index:
+  with_frontmatter: true
+
+plugins:
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
+
+exclude:
+  - Makefile
+  - CNAME
+  - LICENSE
+  - update.sh
+  - Gemfile
+  - Gemfile.lock
+  - requirements.txt
+  - node_modules
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - jekyll-rtd-theme.gemspec
