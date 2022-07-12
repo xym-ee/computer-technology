@@ -92,5 +92,44 @@ http://xu.yumeng.tech/categories
 
 想来看看http协议又是咋回事。
 
+<figure>
+    <img src="./images/http.png">
+</figure>
 
+http协议定义了客户端和服务器之间交互的消息内容和步骤。基本思路很简单：
+- 1.客户端向服务器发送消息请求
+- 2.
+
+请求消息包含的内容是“对什么”和“进什么什么操作”。即**URI**(Uniform Resource Identifier)和**方法**。
+
+URI的内容是一个存放网页数据的的文件名或者CGI程序。如“/dir/file.html”，“/dir/program.cgi”。URI仅限于此，也可以直接使用http开头的URL作为URI，总之这里可以写各种访问目标。
+
+方法表示让web服务器完成什么样的工作。典型的比如读取URI表示的数据，下表给出了主要方法
+
+<figure>
+    <img src="./images/http方法.png">
+</figure>
+
+收到请求，web服务器会对其中的内容进行解析，根据要求来完成自己的工作，然后把结果存放在相应信息里。相应信息的开头是个状态码，比如404 not found就是个状态码。状态码后面是头字段和网页数据。
+
+客户端收到响应消息后，读出数据显示在屏幕上，整个HTTP的工作就完成了。
+
+
+## 生成http消息
+
+大概清楚了http的基本流程，回来浏览器本身来。
+
+对URL解析后，浏览器确定了web服务器和文件名，接下来是根据这些信息来生成http请求信息。http消息在格式上有严格规定。
+
+
+```html
+GET /sample.html HTTP/1.1
+
+
+```
+
+```html
+HTTP/1.1 200 OK
+
+```
 
