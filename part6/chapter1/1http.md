@@ -93,7 +93,7 @@ http://xu.yumeng.tech/categories
 想来看看http协议又是咋回事。
 
 <figure>
-    <img src="./images/http.png">
+    <img src="./images/http.png" width=520 >
 </figure>
 
 http协议定义了客户端和服务器之间交互的消息内容和步骤。基本思路很简单：
@@ -107,7 +107,7 @@ URI的内容是一个存放网页数据的的文件名或者CGI程序。如“/d
 方法表示让web服务器完成什么样的工作。典型的比如读取URI表示的数据，下表给出了主要方法
 
 <figure>
-    <img src="./images/http方法.png">
+    <img src="./images/http方法.png" width=450>
 </figure>
 
 收到请求，web服务器会对其中的内容进行解析，根据要求来完成自己的工作，然后把结果存放在相应信息里。相应信息的开头是个状态码，比如404 not found就是个状态码。状态码后面是头字段和网页数据。
