@@ -14,7 +14,7 @@ sort: 2
 互联网和公司内部的局域网都是基于TCP/IP的思路来设计的，一些小的子网连接起来组成大的网络。结构如下图：
 
 <figure>
-    <img src="./images/IP基本思路.png">
+    <img src="./images/IP基本思路.png" width=500>
 </figure>
 
 子网可以理解为用集线器连接起来的几台计算机，将子网通过路由器连接起来，就形成了一个网络。
@@ -132,13 +132,10 @@ DNS服务器收到查询消息，如果要访问的web服务器在DNS服务器�
     <img src = "./images/dns设置.png" width=350>
 </figure>
 
-
 ```note
 协议栈：操作系统内部的网络控制软件。也叫做“协议驱动”“TCP/IP驱动”。
 
 ```
-
-
 
 ## dns服务器
 
@@ -163,7 +160,7 @@ DNS服务器上事先保存了这些东西。
 如果要搭一个自己的主页，并使用自己的域名，那么有个步骤就是要配置DNS服务器的解析设置：
 
 <figure>
-    <img src = "./images/dns记录类型.png" border=1 width=550>
+    <img src = "./images/dns记录类型.png" border="1" width=550>
 </figure>
 
 
