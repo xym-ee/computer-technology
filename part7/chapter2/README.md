@@ -1,7 +1,6 @@
 ---
 sort: 2
 ---
-# Linux 使用
-
+# GCC、GDB 与 IDE
 
 
