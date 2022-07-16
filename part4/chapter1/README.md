@@ -70,4 +70,45 @@ In the computer, the principle on which it operates has to do with electricity, 
 ```
 
 
+## 书的介绍
+
+This book is not primarily intended to be a textbook. There are no problems to do at the end of each chapter. Its intention is simply to demystify the subject of computers for anyone who has ever wondered what’s going on inside of that box. Of course, it also makes aperfect introduction to computers for a young person who will ultimately go on to get a PhD in Computer Science. But it should be easily understandable by house wives,s enior citizens and children who can read well. It should be understandable to plumbers and street sweepers. It requires no previous technical education. It only requires that you can read the language, you can turn a light bulb on and off, and you can do very simple addition on the order of 8+5=13.
+
+This book presents the complete essentials that make upa computer. It presents every piece and part, in the proper order so that each one will make sense, and can be understood. Every part is explained fully, and every new word is defined thoroughly when it is first used. Any attempt to simplify the subject further would leave gaps in the big picture where someone would still have to guess how the parts work together, and you just wouldn’t ever have that “Aha, I get it!” moment that I think you’ll soon have.
+
+This book is not a ‘dumbed-down’ version of some college textbook. It is a complete explanation of the basic principles of computers. It is a technical book, but sois a cookbook and so is a driver’s education handbook.This book just starts at the beginning and defines everyitem needed to understand the machine. No matter what someone already knows about computers, this will fill inany missing pieces and put them all together into something that makes sense.
+
+这并不是一本教科书，也不会有课后习题。这本是为对计算机感兴趣的人、想了解计算机工作原理的人准备的。当然计算机专业的同学也可以使用这本书来学习计算机的全貌。最重要的，这本书里的内容很好理解，楼下的老奶奶，二年级的小朋友都能看明白。也就是说这本书不需要太多的前置知识，只要看得懂中文，明白打开开关灯就会亮，会十以内加减法就可以。
+
+这本书以从逻辑门开始，逐步实现构成计算机的每一个部分。每部分都介绍的非常详细而且易于理解。都一个全新的名词出现的时候，都会进行详细的解释。当子模块用简化框图表示以实现更复杂的模块时，都会配上完美的插图来帮助理解这几部分时如何配合工作的。
+
+这本书并不是简化版的计算机专业的教科书。这本书对对计算机工作原理做了完整的说明，像一本手册，从一开始就解释了计算机里面需要理解的东西。如果你已经有了一些计算机底层的知识，那么这本书会填满你所有关于底层缺失的部分，形成一个完成的计算机体系。
+
+Even our friend, Joe, could understand this book withdiligent study. There are thousands of words and ideasassociated with the field of computers that make thewhole subject seem like a mess. But the basic conceptsunderlying them are simple.
+
+In this book, there will not be volumes of trivia about the construction or history of computers, just theessentials, no more and no less. Each part of thecomputer has a simple function, and when they areconnected together, you end up with a useful machinecalled a computer.
+
+There is nothing to memorize in this book. Each chapteris designed to give you a new idea that you didn’t havebefore, or if it is something that you had heard aboutpreviously, it always seemed confusing. Each idea isvery simple, and one thing leads to the next. Eachchapter presents an idea. Each idea is simple and easyto understand. Later chapters present ideas that buildon the ideas from previous chapters.
+
+楼下老奶奶也能通过勤奋学习理解书里的内容。尽管计算机领域的术语很多，体系结构看起来复杂且混乱，但是背后的基本概念很简单。
+
+这本书里不会出现计算机的历史等内容，只有构成计算机必要的部分。每一部分都有一个简单的功能，当你把它们连接到一起时，就能获得一个有用的机器，这就是计算机。
+
+这本书里没有需要背诵的东西，每一章都是一个新的想法，每个想法都很简单，一个接着一个环环相扣。后面的章节提出的概念基于先前章节提出过的概念。
+
+If someone were to write a book about how to build ahouse, there could be various levels of detail. Thesimplest book would say, “lay a foundation, put up thewalls, cover with a roof, put in plumbing andelectrical, and you’re done.” That would not be enoughdetail for someone who didn’t already have someexperience using a hammer and saw and installing afaucet and wiring a light switch.
+
+At the other end of the spectrum would be a book thathad separate chapters for every possible type offoundation, the different kinds of dirt you might haveto dig in, formulas for a dozen different kindsconcrete, charts of weather conditions that are optimumfor laying foundations, etc. That would be far too muchinformation. There would be so many details, that whatwas really important would get lost.
+
+如果有人写了一本盖房子的书，肯定会包含不同层次的细节。最简单的那本这么写：“打地基，砌墙，封顶，通水电，就完成了。” 但这对那些没有使用过榔头，没有安装过水龙头或是没有接过电线的人来说这些细节还不够。
+
+另一方面，这本书对每种可能的地基类型都有单独的章节，你可能需要挖掘的不同类型的泥土，十几种不同类型混凝土的公式，最适合奠定基础的天气条件图表，等等。这些信息太多了。会有太多的细节，以至于真正重要的东西都会丢失。
+
+This book attempts to give just enough detail to seewhat every computer has in common and how they work, nothow to build the biggest or best computer ever made. Itis not about any specific brand of computer. It is not about how to use a computer. If it were a book about building a house, it would probably describe a simple plan for a sturdy garden shed with a sink and one barelight bulb, showing the size and shape of every piece of wood, where to put all the nails, how to hang the door and how to put the water pipes together so they wouldn’t leak. It would not show how to build anything as complicated as a fancy curved oak staircase.
+
+We are going to show the one simple part that computers are made of, and then connect a bunch of them together until we have built a complete computer. It is going tobe a lot simpler than you ever imagined.
+
+
+这本书试图提供足够的细节来了解每台计算机的共同点以及它们是如何工作的，而不是如何建造有史以来最大或最好的计算机。这与任何特定品牌的电脑无关。这不是关于如何使用电脑。如果这是一本关于建造房子的书，它可能会描述一个简单的计划，一个坚固的花园棚，有一个水槽和一个光灯泡，显示每一块木头的大小和形状，在哪里放置所有的钉子，如何挂门，如何把水管放在一起，这样他们就不会漏水。它并没有展示如何建造一座复杂的弯曲橡木楼梯。
+
 
