@@ -100,15 +100,17 @@ If someone were to write a book about how to build ahouse, there could be variou
 
 At the other end of the spectrum would be a book thathad separate chapters for every possible type offoundation, the different kinds of dirt you might haveto dig in, formulas for a dozen different kindsconcrete, charts of weather conditions that are optimumfor laying foundations, etc. That would be far too muchinformation. There would be so many details, that whatwas really important would get lost.
 
-如果有人写了一本盖房子的书，肯定会包含不同层次的细节。最简单的那本这么写：“打地基，砌墙，封顶，通水电，就完成了。” 但这对那些没有使用过榔头，没有安装过水龙头或是没有接过电线的人来说这些细节还不够。
+如果有人写了一本盖房子的书，会包含不同层次的细节。最简单的那本这么写：“打地基，砌墙，封顶，通水电，就完成了。” 有些人榔头也没见过，民用电电压是多少也不知道，因此这么写这些细节还不够。
 
-另一方面，这本书对每种可能的地基类型都有单独的章节，你可能需要挖掘的不同类型的泥土，十几种不同类型混凝土的公式，最适合奠定基础的天气条件图表，等等。这些信息太多了。会有太多的细节，以至于真正重要的东西都会丢失。
+另一种写法是事无巨细，你可能需要挖掘的不同类型的泥土，十几种不同类型混凝土的公式，最适合奠定基础的天气条件图表，等等。这些信息太多了。太多的细节又会让重点丢失，因此这个度还是很难把握的。
 
 This book attempts to give just enough detail to seewhat every computer has in common and how they work, nothow to build the biggest or best computer ever made. Itis not about any specific brand of computer. It is not about how to use a computer. If it were a book about building a house, it would probably describe a simple plan for a sturdy garden shed with a sink and one barelight bulb, showing the size and shape of every piece of wood, where to put all the nails, how to hang the door and how to put the water pipes together so they wouldn’t leak. It would not show how to build anything as complicated as a fancy curved oak staircase.
 
 We are going to show the one simple part that computers are made of, and then connect a bunch of them together until we have built a complete computer. It is going tobe a lot simpler than you ever imagined.
 
+这本书试图提供足够的细节来说明计算机的工作原理，去尝试设计一台简单计算机。麻雀虽小五脏俱全，照着这本书没法设计一台最大或最好的计算机。但是工作原理和具体品牌的电脑无关，但是具体品牌的电脑又基于这些原理实现。
 
-这本书试图提供足够的细节来了解每台计算机的共同点以及它们是如何工作的，而不是如何建造有史以来最大或最好的计算机。这与任何特定品牌的电脑无关。这不是关于如何使用电脑。如果这是一本关于建造房子的书，它可能会描述一个简单的计划，一个坚固的花园棚，有一个水槽和一个光灯泡，显示每一块木头的大小和形状，在哪里放置所有的钉子，如何挂门，如何把水管放在一起，这样他们就不会漏水。它并没有展示如何建造一座复杂的弯曲橡木楼梯。
+书里展示计算机的每一个简单模块是如何工作的，然后把这些模块连接起来，一台能用的计算机就出现了。
+
 
 

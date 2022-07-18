@@ -1,8 +1,11 @@
 ---
 sort: 1
 ---
-# 从浏览器开始
+# 浏览器生成消息
 
+<figure>
+    <img src="../network.png" width=800>
+</figure>
 
 开始上网。
 
