@@ -3,7 +3,26 @@ sort: 4
 ---
 # 计算机系统基础
 
+## 参考资料
 
+- 计算机系统基础视频课
+  - [程序的表示、转换和链接](https://www.bilibili.com/video/BV1kE411X7S5)
+  - [程序的执行和存储访问](https://www.bilibili.com/video/BV1rE41127Re)
+  - [异常、中断和输入输出](https://www.bilibili.com/video/BV1jE411874k)
+- 计算机系统基础习题课 (2022 秋季学期)王慧妍
+  - [课程主页](http://why.ink:8080/ICS/2022/)
+  - [课程实验指南](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/index.html)
+- 计算机系统基础习题课 - 2021 秋季学期 jyy
+  - [课程主页](http://jyywiki.cn/ICS/2021/)
+  - [视频课程](https://www.bilibili.com/video/BV1qa4y1j7xk)
+  - [课程实验指南](https://nju-projectn.github.io/ics-pa-gitbook/ics2021/PA0.html)
+
+
+## 基本信息
+
+- 教材
+  - 1.袁春风. 计算机系统基础（第2版） [M]. 北京：机械工业出版社，2018 （前4章）
+  - 2.Randal E. Bryant, David R. O'Hallaron. 深入理解计算机系统（原书第3版）[M]. 龚奕利，雷迎春译北京：机械工业出版社，2016
 
 计算机系统的一个抽象：
 - 应用层
@@ -32,6 +51,6 @@ sort: 4
 - 数据在机器上的表示
 - 数据运算的机器实现
 
+STFW(Search The Fucking Web)
 
-
-
+RTFM(Read The Fucking Manual)
