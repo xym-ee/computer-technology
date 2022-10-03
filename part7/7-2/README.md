@@ -77,7 +77,7 @@ Operating System: A body of software, in fact, that is responsible for m*aking i
 教材会给一个东西下一个滴水不漏的定义。但是读起来味同嚼蜡：操作系统（英语：Operating System，缩写：OS）是一组主管并控制计算机操作、运用和运行硬件、软件资源和提供公共服务来组织用户交互的相互关联的系统软件程序。
 
 <figure>
-    <img src="./os.png" width=500>
+    <img src="./images/os.png" width=500 border=1>
 </figure>
 
 操作系统的边界是比较模糊的。操作系统管理一些资源，提供一些服务。
@@ -252,7 +252,7 @@ Computer must be right
 比如
 
 <figure>
-  <img src="./tar.png" width=500 >
+  <img src="./images/tar.png" width=500 >
 </figure>
 
 不用网络，那么查自带手册
