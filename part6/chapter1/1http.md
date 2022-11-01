@@ -16,11 +16,11 @@ sort: 1
 
 一些常见的url
 
-https://xu.yumeng.tech/images/wechat.png
+https://xym.work/images/wechat.png
 
 访问一个png格式的图片
 
-https://xu.yumeng.tech/categories.html
+https://xym.work/categories.html
 
 访问一个html格式的文件
 
@@ -49,9 +49,9 @@ url的开头的文字表示浏览器应该使用的访问方法，如访问web�
 
 |协议||服务器名|目录|文件名|
 |:-:|-|:-:|:-:|:-:|
-|http:|//|xu.yumeng.tech|/categories|/fieldplay.html|
+|http:|//|xym.work|/categories|/fieldplay.html|
 
-这个url会拆分成这几部分，因此浏览器的解析结果就是访问xu.yumeng.tech这个web服务器上在/categories目录下的fieldplay.html这个文件。
+这个url会拆分成这几部分，因此浏览器的解析结果就是访问xym.work这个web服务器上在/categories目录下的fieldplay.html这个文件。
 
 也即我们看到的网页本质上是个文件。文本+格式控制+小插件就形成各类各种各样的网页。
 
@@ -76,7 +76,7 @@ http://www.baidu.com 是最多用的冲浪方式，连/都省略了，没有路�
 
 还有一种情况
 
-http://xu.yumeng.tech/categories
+http://xym.work/categories
 
 不可以既有一个categories目录，还有个categories文件。这个网址末尾没有/，看起来是个文件，但是呢，也可以是一个目录，默认访问categories里的index.html文件。
 
