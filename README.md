@@ -1,6 +1,6 @@
 
-![GitHub last commit](https://badgen.net/github/last-commit/Meng2025/computer-technology/main)
-![Github commits](https://badgen.net/github/commits/Meng2025/computer-technology/main)
+![GitHub last commit](https://badgen.net/github/last-commit/xym-ee/computer-technology/main)
+![Github commits](https://badgen.net/github/commits/xym-ee/computer-technology/main)
 ![no problems](https://badgen.net/badge/no%20problem/(maybe)/red)
 
 *感谢访问我的学习笔记。*
