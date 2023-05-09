@@ -149,7 +149,7 @@ int pivot_root(const char *new_root, const char *put_old);
 
 ramfs 的事情是创建好足够多的对象，。
 
-
+## 实际操作部分
 
 ## 操作系统启动后到底做了什么？(2022版未整理)
 
