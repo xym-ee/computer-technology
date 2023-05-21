@@ -216,7 +216,153 @@ linux 里有很多系统工具都是动态链接的，这样系统里可以只�
 
 此外，大型项目的内部也可以内部分解。编译一部分，不需要重新链接。
 
-动态链接的
+### 设计一个二进制文件格式
+
+```note
+ELF 是个数据结构，当我们对着一个数据结构的内存表示学习时，是不太容易的。我们应该从数据结构的角度出发。
+
+同样的，对于动态链接，我们应该把这个数据结构设计成什么样，使得支持动态链接。然后再找性能缺陷去改进。
+```
+
+如果编译器、链接器、加载器都可以控制
+- 如何设计、实现一个 “最直观” 的动态链接格式？
+  - 再去考虑怎么改进它，就能得到 ELF！
+- 假设编译器可以生成位置无关代码 (PIC)
+
+假设编译器可以生成这样的二进制文件
+```
+DL_HEAD
+
+LOAD("libc.dl") # 加载动态库
+IMPORT(putchar) # 加载外部符号
+EXPORT(hello)   # 为动态库导出符号
+
+DL_CODE
+
+hello:
+  ...
+  call DSYM(putchar) # 动态链接符号
+  ...
+
+DL_END
+```
+
+即，有一个 `main.c` 经过编译器生成了 `main.S`，即这段程序
+```c
+#include "dl.h"
+
+DL_HEAD
+
+LOAD("libc.dl")
+LOAD("libhello.dl")
+IMPORT(hello)
+EXPORT(main)
+
+DL_CODE
+
+main:
+  call DSYM(hello)
+  call DSYM(hello)
+  call DSYM(hello)
+  call DSYM(hello)
+  movq $0, %rax
+  ret
+
+DL_END
+```
+这里会调用一个外部函数，hello，但是 hello 的地址是不知道的，在链接的时候都不知道 hello 的地址，也不知道 hello 的实现。只知道在程序运行时，hello 的代码才确定，有个指针会指着 hello。
+
+这个时候，我们需要去考虑的一个设计：在编译器把 .c 翻译成 .S 的时候，该如何去翻译呢？这个 .S 也是一个数据结构，里面应该要有一个表，现在是空的，运行的时候要填上，表里存放 hello 的入口地址。
+
+这样编译器可以把这样一个 hello() 的调用翻译成一个间接查表的跳转即 call(hello_addr)，这就初步解决了动态调用的问题。此外我们还需要加载一些动态库。
+
+
+再看 libhello
+```c
+#include "dl.h"
+
+DL_HEAD
+
+LOAD("libc.dl")
+IMPORT(putchar)
+EXPORT(hello)
+
+DL_CODE
+
+hello:
+  lea str(%rip), %rdi
+  mov count(%rip), %eax
+  push %rbx
+  mov %rdi, %rbx
+  inc %eax
+  mov %eax, count(%rip)
+  add $0x30, %eax
+  movb %al, 0x6(%rdi)
+loop:
+  movsbl (%rbx),%edi
+  test %dil,%dil
+  je out
+  call DSYM(putchar)
+  inc  %rbx
+  jmp loop
+out:
+  pop %rbx
+  ret
+
+str:
+  .asciz "Hello X\n"
+
+count:
+  .int 0
+
+DL_END
+```
+
+这个库需要一个 libc 的动态链接库，需要一个 putchar 函数，也没有，因此也被翻译成一个动态的 `call DSYM(putchar)`
+
+以上是自己设计的一个数据结构。
+
+如何实现 DSYM() 呢？，需要在可执行文件这个数据结构里放这么一张表。
+
+```c
+#define REC_SZ 32
+#define DL_MAGIC "\x01\x14\x05\x14"
+
+#ifdef __ASSEMBLER__
+  #define DL_HEAD     __hdr: \
+                      /* magic */    .ascii DL_MAGIC; \
+                      /* file_sz */  .4byte (__end - __hdr); \
+                      /* code_off */ .4byte (__code - __hdr)
+  #define DL_CODE     .fill REC_SZ - 1, 1, 0; \
+                      .align REC_SZ, 0; \
+                      __code:
+  #define DL_END      __end:
+
+  #define RECORD(sym, off, name) \
+    .align REC_SZ, 0; \
+    sym .8byte (off); .ascii name
+
+  #define IMPORT(sym) RECORD(sym:,           0, "?" #sym "\0")
+  #define EXPORT(sym) RECORD(    , sym - __hdr, "#" #sym "\0")
+  #define LOAD(lib)   RECORD(    ,           0, "+" lib  "\0")
+  #define DSYM(sym)   *sym(%rip)
+#else
+  #include <stdint.h>
+
+  struct dl_hdr {
+    char magic[4];
+    uint32_t file_sz, code_off;
+  };
+
+  struct symbol {
+    int64_t offset;
+    char type, name[REC_SZ - sizeof(int64_t) - 1];
+  };
+#endif
+```
+
+
+
 
 
 
