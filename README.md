@@ -1,7 +1,7 @@
 
 ![GitHub last commit](https://badgen.net/github/last-commit/xym-ee/computer-technology/main)
 ![Github commits](https://badgen.net/github/commits/xym-ee/computer-technology/main)
-![no problems](https://badgen.net/badge/no%20problem/(maybe)/red)
+![Github commits](https://badgen.net/github/stars/xym-ee/computer-technology)
 
 *感谢访问我的学习笔记。*
 
@@ -18,22 +18,22 @@
 **这个笔记本将要整理的内容：**
 
 
-- [ ] 1.程序设计基础
+- [ ] 程序设计基础
   - 计算机语言：C/C++ 与汇编，编译初步gcc和gdb
   - 数据结构和算法初步，leetcode刷题
   - 程序设计：软件工程及设计思想
   - 软件工程的一些工具：git 与 GitHub
-- [ ] 2.数字逻辑电路
-  - 组合逻辑、时序逻辑、FPGA基础
-- [ ] 43.计算机系统基础
+- [ ] 计算机系统基础(csapp)
+  - 可执行目标文件的生成，可执行目标文件的运行
   - 操作系统的使用，linux、shell、gcc、各种工具
-- [ ] 4.计算机组成和设计
+- [ ] 计算机组成和设计
   - 组成原理，实例：IBM5150(微机原理)
   - 从逻辑门到计算机，设计一个简单 CPU
 - [ ] 5.计算机网络
 - [ ] 6.操作系统
   - 并发、虚拟化、持久化
-
+- [ ] 2.数字逻辑电路
+  - 组合逻辑、时序逻辑、FPGA基础
 
 其他计算机应用相关，单开新的笔记本来记录：
 - [ ] 前端技术，做一个静态网站
